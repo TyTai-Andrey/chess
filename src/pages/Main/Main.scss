@@ -1,0 +1,124 @@
+$blue: #235390;
+$purple: #C200AF;
+$grey: #AEAEAE;
+
+.main {
+	width: 100%;
+	padding: 30px;
+	.types {
+	display: flex;
+
+	h2 {
+		margin: 0 0 5px 0;
+	}
+
+	.type:first-child {
+		margin-right: 20px;
+	}
+
+	.type.active {
+		.line {
+			display: block;
+		}
+	}
+
+	.type {
+		cursor: pointer;
+
+		.line {
+			width: 100%;
+			height: 3px;
+			border-radius: 5px;
+			display: none;
+		}
+	}
+
+	.type-students {
+		h2 {
+			color: $blue;
+		}
+		.line {
+			background: $blue;
+		}
+	}
+
+	.type-groups {
+		h2 {
+			color: $purple;
+		}
+		.line {
+			background: $purple;
+		}
+	}	
+}
+
+.add {
+	display: flex;
+	height: 100px;
+	margin-top: 24px;
+	margin-bottom: 50px;
+	.add-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		font-size: 15px;
+		line-height: 20.46px;
+		margin-right: 30px;
+		.add__button {
+			padding: 10px;
+			border-radius: 10px;
+			border-style: solid;
+		    border-width: 2px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    box-sizing: border-box;
+		    height: 43px;
+
+			&-student {
+				border-color: $blue;
+				color: $blue;
+
+				.ellipse {
+					background: $blue;
+				}
+			}
+
+			&-group {
+				border-color: $purple;
+				color: $purple;
+
+				.ellipse {
+					background: $purple;
+				}
+			}
+
+			.ellipse {
+				width: 25px;
+				height: 25px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.add-right {
+		border: 3px $grey dashed;
+		color: $grey;
+		font-size: 20px;
+		line-height: 27.28px;
+		border-radius: 5px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			margin-right: 16px;
+		}
+	}
+}
+}
