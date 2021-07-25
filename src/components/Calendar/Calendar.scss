@@ -1,0 +1,141 @@
+
+$white: #F1FCFF;
+$blue: #235390;
+$grey: #E2E2E2;
+
+.Calendar-wrapper {
+	margin-top: 20px;
+	position: relative;
+
+	.Calendar {
+		display: grid;
+		grid-template-columns: 62px repeat(7, 1fr);
+		grid-template-rows: 73px repeat(11, 51px);
+
+		.Calendar-date {
+			background: $white;
+			color: $blue;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			.num {
+				font-size: 20px;
+				line-height: 27px;
+				font-weight: 800;
+			}
+
+			.letter {
+				font-size: 15px;
+				line-height: 20px;
+				font-weight: 600;
+			}
+
+		}
+
+		.Calendar-date-spase {
+			background: $white;
+			border-right: 1px solid $grey;
+
+		}
+
+		.Calendar-item:hover .Calendar-item__body {
+			display: flex;
+		}
+
+		.Calendar-item {
+				box-sizing: border-box;
+				border-bottom: 1px solid $grey;
+			&__body {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 13px;
+				font-weight: 700;
+				color: #235390;
+				white-space: nowrap;
+				border: 2px #235390 dashed;
+				border-radius: 5px;
+				box-sizing: border-box;
+				padding: 4px;
+				display: none;
+				cursor: pointer;
+			}
+			
+
+			.ellipse {
+				width: 20px;
+			    height: 20px;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    border-radius: 50%;
+			    margin-right: 5px;
+				background: #235390;
+			}
+		}
+
+		.Calendar-item-time {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-size: 15px;
+			line-height: 20px;
+			font-weight: 700;
+			border-bottom: 1px solid $grey;
+			border-right: 1px solid $grey;
+		}
+	}
+
+	.Calendar-curtain {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: rgba(255, 255, 255, .7);
+		position: absolute;
+		top: 0;
+
+
+		.calendar {
+			margin-top: 80px;
+			margin-bottom: 20px;
+		}
+
+		h3 {
+			font-size: 20px;
+			line-height: 27px;
+			font-weight: 700;
+			color: #235390;
+		}
+
+		.button {
+			background: #235390;
+			border-radius: 10px;
+			display: flex;
+			align-items: center;
+			color: #ffffff;
+			font-size: 15px;
+			line-height: 20px;
+			font-weight: 700;
+			padding: 10px;
+			cursor: pointer;
+
+			.ellipse {
+				width: 25px;
+			    height: 25px;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    border-radius: 50%;
+			    margin-right: 5px;
+				background: #ffffff;
+			}
+		}
+	}
+}

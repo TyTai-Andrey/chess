@@ -1,0 +1,36 @@
+
+
+
+
+.lesson {
+	width: 100%;
+	height: 51px;
+	position: relative;
+
+	&-screen{
+		width: 100%;
+		box-sizing: border-box;
+		padding: 4px;
+		.lesson-body {
+			// padding: 4px 4px 5px 4px;
+			box-sizing: border-box;
+			height: 100%;
+			.lesson-type {
+			height: 100%;
+			border-radius: 5px;
+			display: flex;
+			align-items: flex-start;
+			font-size: 12px;
+			line-height: 16px;
+			font-weight: 700;
+			padding: 6px;
+			box-sizing: border-box;
+
+			img {
+				width: 30px;
+				margin-right: 5px;
+			}
+		}
+		}
+	}
+}

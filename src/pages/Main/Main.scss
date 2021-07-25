@@ -1,6 +1,4 @@
-$blue: #235390;
-$purple: #C200AF;
-$grey: #AEAEAE;
+@import '../../styles/config.scss';
 
 .main {
 	width: 100%;
@@ -74,6 +72,7 @@ $grey: #AEAEAE;
 		    align-items: center;
 		    box-sizing: border-box;
 		    height: 43px;
+		    cursor: pointer;
 
 			&-student {
 				border-color: $blue;
@@ -115,10 +114,24 @@ $grey: #AEAEAE;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	    cursor: pointer;
 
 		img {
 			margin-right: 16px;
 		}
 	}
+	.border-students {
+		display: flex;
+		.student {
+			margin-right: 30px;
+			.student-name {
+				text-align: center;
+				font-size: 15px;
+				line-height: 20.28px;
+				font-weight: 700;
+			}
+		}
+	}
+	
 }
 }

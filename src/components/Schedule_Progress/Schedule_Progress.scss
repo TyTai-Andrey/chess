@@ -1,0 +1,68 @@
+@import '../../styles/config.scss';
+
+
+.schedule_progress {
+	.schedule_progress-menu {
+		display: flex;
+		justify-content: space-between;
+		&_left {
+			display: flex;
+
+			h2 {
+				margin: 0;
+			}
+
+			.type {
+				cursor: pointer;
+			}
+
+			.schedule {
+				margin-right: 22px;	
+				color: $blue;
+
+				.line {
+					background: $blue;
+				}
+			}
+			.progress {
+				color: $purple;
+
+				.line {
+					background: $purple;
+				}
+			}
+
+			.line {
+				width: 100%;
+				height: 3px;
+				border-radius: 5px;
+				display: none;
+			}
+
+			.active.type .line {
+				display: block;
+			}
+		}
+		&_right {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			min-width: 250px;
+			font-size: 15px;
+			line-height: 20px;
+			font-weight: 700;
+
+			span {
+				padding: 0 14px;
+			}
+
+			img:last-child {
+				transform: rotate(180deg);
+			}
+
+			img {
+				cursor: pointer;
+			}
+		}
+	}
+}
