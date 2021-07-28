@@ -26,6 +26,18 @@ export const Calendar = ({week}) => {
 		return <><div className="Calendar-date-spase"></div>{CalendarDate}</>
 	}
 
+	function setModalHandler (e) {
+		let check = e.target;
+
+		while (check.classList[0] !== 'Calendar-item') {
+			check = check.parentNode
+		}
+
+		console.log(check.classList)
+		// 'Calendar-item'
+		dispatch(Set_Modal({type: 'new_lesson', payload: check.classList[1], update: ''}))
+	}
+
 	function CalendarTime(time) {
 
 		const CalendarTime = state.nowWeek.map((i,index)=>{
@@ -51,7 +63,7 @@ export const Calendar = ({week}) => {
 						<div className={`Calendar-item ${""+((''+i.Day).length === 1 ? '0'+i.Day : i.Day)+'.'+((''+i.Month).length === 1 ? '0'+i.Month : i.Month)+'-'+time}`}>
 							<div 
 							className="Calendar-item__body"
-							onClick={()=>{dispatch(Set_Modal('new_lesson'))}}
+							onClick={(e)=>{setModalHandler(e)}}
 							>
 								<div className="ellipse">
 					                <img
@@ -84,7 +96,7 @@ export const Calendar = ({week}) => {
 					<h3>Для планирования уроков в расписании сначала добавьте учеников</h3>
 					<div 
 					className="button"
-			        onClick={()=>{dispatch(Set_Modal('add_student'))}}
+			        onClick={()=>{dispatch(Set_Modal({type: 'add_student', payload: '', update: ''}))}}
 					>
 						<div className="ellipse">
 			                <img

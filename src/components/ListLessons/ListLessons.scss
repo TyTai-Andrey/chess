@@ -1,0 +1,61 @@
+.ListLessons {
+	
+	.ListLessons-headRow {
+		display: grid;
+		grid-template-columns: 33px 167px repeat(6, 1fr);
+		grid-template-rows: 73px;
+
+		background: #f1fcff;
+
+		.ListLessons-headItem {
+			color: #235390;
+			font-size: 20px;
+			line-height: 27.28px;
+			font-weight: 800;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			padding: 4px;
+		}
+	}
+
+	.ListLessons-bodyRow {
+		display: grid;
+		grid-template-columns: 33px 167px repeat(6, 1fr);
+		grid-template-rows: 73px;
+
+		.ListLessons-bodyItem {
+			color: #4F4F4F;
+			font-size: 15px;
+			line-height: 20.28px;
+			font-weight: 700;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		} 
+		
+	}
+
+	.ListLessons-bodyRow:hover {
+		background: #f5e6fe;
+	}
+
+	.ListLessons-Item {
+		text-align: center;
+		border-bottom: 1px solid #E2E2E2;
+	}
+
+	.ListLessons-Item:first-child {
+		border-right: 1px solid #E2E2E2;
+	}
+
+}
+
+
+@import './ListLessons.media.scss';
+
+
+

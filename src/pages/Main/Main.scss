@@ -1,10 +1,37 @@
-@import '../../styles/config.scss';
 
-.main {
+$blue: #235390;
+$purple: #C200AF;
+$grey: #AEAEAE;
+
+#main {
+
+	.AddStudentAndLessons {
+		max-width: 50%;
+		margin: 0 auto;
+
+		color: #fff;
+		background: $blue;
+		padding: 20px 30px;
+
+		border-radius: 20px;
+		text-align: center;
+
+		font-size: 20px;
+		line-height: 27.28px;
+		font-weight: 800;
+
+
+		cursor: pointer;	
+	}
+
 	width: 100%;
 	padding: 30px;
+    overflow-y: scroll;
+    height: 100vh;
+    box-sizing: border-box;
 	.types {
 	display: flex;
+	align-items: center;
 
 	h2 {
 		margin: 0 0 5px 0;
@@ -50,11 +77,21 @@
 	}	
 }
 
+/* хром, сафари */
+.main::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.main { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.main { overflow: -moz-scrollbars-none; }
+
 .add {
 	display: flex;
 	height: 100px;
 	margin-top: 24px;
 	margin-bottom: 50px;
+	width: 100%;
 	.add-left {
 		display: flex;
 		flex-direction: column;
@@ -64,6 +101,7 @@
 		margin-right: 30px;
 		.add__button {
 			padding: 10px;
+		    font-weight: 700;
 			border-radius: 10px;
 			border-style: solid;
 		    border-width: 2px;
@@ -122,16 +160,37 @@
 	}
 	.border-students {
 		display: flex;
-		.student {
-			margin-right: 30px;
-			.student-name {
-				text-align: center;
-				font-size: 15px;
-				line-height: 20.28px;
-				font-weight: 700;
+		justify-content: space-between;
+		width: 100%;
+			overflow: hidden;
+		.students {
+			display: flex;
+			overflow: hidden;
+			.student {
+				margin-right: 30px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.student-name {
+					text-align: center;
+					font-size: 15px;
+					line-height: 20.28px;
+					font-weight: 700;
+				}
 			}
 		}
-	}
-	
+		.next {
+			width: 30px;
+			margin: 0 10px;
+			cursor: pointer;
+		}
+
+		.next-mobil {
+			display: none;
+			cursor: pointer;
+		}
+	}	
 }
 }
+
+@import './Main.media.scss';

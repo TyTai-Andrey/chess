@@ -1,5 +1,8 @@
 export const CALENDAR_UPDATE = "CALENDAR_UPDATE"
 export const WEEK_UPDATE = "WEEK_UPDATE"
+export const LESSON_ADD = "LESSON_ADD"
+export const LESSON_DELETE = "LESSON_DELETE"
+export const UPDATE_STUDENTS = "UPDATE_STUDENTS"
 export const MODAL = "MODAL"
 
 export const ADD_STUDENT = "ADD_STUDENT"

@@ -1,0 +1,110 @@
+@import '../../styles/config.scss';
+
+
+@media screen and (max-width: 767px) {
+	.schedule_progress {
+		.schedule_progress-menu {
+			&_left {
+				flex-direction: column;
+				// height: 25px;
+				// overflow: hidden;
+
+				.type {
+					height: 25px;
+				}
+
+				.schedule {
+					margin-right: 0px;	
+				}
+				.progress {
+					margin-bottom: 5px;
+				}
+
+				.line {
+					height: 2px;
+				}
+
+				.active.type .line {
+					display: block;
+				}
+
+				.arrow {
+					line-height: 0px;
+					margin: 0 10px;
+					width: 6px;
+					height: 10px;
+					position: relative;
+					left: 15px;
+					transform: rotate(90deg);
+				}
+
+				.numderLesson {
+					margin-top: 5px;
+				}
+			}
+			&_right {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				min-width: 180px;
+				font-size: 15px;
+				line-height: 20px;
+				font-weight: 700;
+
+				span {
+					padding: 0 14px;
+				}
+
+				img:last-child {
+					transform: rotate(180deg);
+				}
+
+				img {
+					cursor: pointer;
+				}
+			}
+
+			.filter {
+				display: flex;
+			}
+		}
+	}
+
+	.select-body {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.schedule_progress {
+		.schedule_progress-menu {
+			margin-bottom: 30px;
+			&_left {
+				display: flex;
+
+				h2 {
+					font-size: 15px;
+					line-height: 20.46px;
+					font-weight: 700;
+				}
+
+				
+				.arrow {
+					line-height: 22px;
+					margin: 0 10px;
+				}
+
+				.numderLesson {
+					color: $purple;
+					line-height: 36px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 413px) and (min-width: 0px) {
+	.schedule_progress {
+		display: none;
+	}
+}

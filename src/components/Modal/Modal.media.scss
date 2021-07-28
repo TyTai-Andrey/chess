@@ -1,0 +1,34 @@
+
+@media screen and (max-width: 599px) {
+	
+	.Modal-curtain {
+		.Modal {
+			margin: 0 16px;
+			.Modal-body {
+				padding: 0 28px;
+				.registration {
+					flex-direction: column;
+					align-items: center;
+					width: 100%;
+					p {
+						width: 100%;
+						text-align: center;
+					}
+				}
+
+				.selection {
+					flex-direction: column;
+					width: 263px;
+				}
+			}
+			.Modal-footer {
+				.Modal-buttons {
+					padding: 0 25px;
+				}
+				.Modal-button.small {
+					padding: 10px 20px;
+				}
+			}
+		}
+	}
+}

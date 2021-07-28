@@ -1,0 +1,26 @@
+
+
+@media screen and (max-width: 1366px) {
+	.ListLessons {
+		overflow-x: scroll;
+		.ListLessons-headRow {
+			grid-template-columns: 27px 125px repeat(6, 1fr);
+			grid-template-rows: 40px;
+		    min-width: 883px;
+			.ListLessons-headItem {
+				font-size: 16px;
+				line-height: 21.28px;
+				font-weight: 800;
+			}
+		}
+		.ListLessons-bodyRow {
+			grid-template-columns: 27px 125px repeat(6, 1fr);
+			grid-template-rows: 40px;
+		    min-width: 883px;
+			.ListLessons-bodyItem {
+			} 
+		}
+	}
+}
+
+

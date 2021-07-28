@@ -1,0 +1,32 @@
+
+@media screen and (max-width: 1366px) {
+
+	.LessonInformation {	
+		overflow-x: scroll;
+		.LessonInformation-headRow {
+			grid-template-columns: 27px 125px repeat(6, 1fr);
+			grid-template-rows: 40px;
+		    min-width: 883px;
+			.LessonInformation-headItem {
+				font-size: 16px;
+				line-height: 21.28px;
+				font-weight: 800;
+
+			}
+		}
+		.LessonInformation-bodyRow {
+			grid-template-columns: 27px 125px repeat(6, 1fr);
+			grid-template-rows: 40px;
+		    min-width: 883px;
+			.LessonInformation-bodyItem {
+				.ellipse {
+					width: 8px;
+					height: 8px;
+					margin-right: 6px;
+					margin-left: 4px;
+				}
+			} 	
+		}
+	}
+}
+

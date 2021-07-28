@@ -28,58 +28,65 @@ export const DAYS = [
 export const LESSON = [
 	{
 		date: '20.07.2021',
-		student_name: 'Andrey',
+		student_name: 'Андрей',
 		time_start: '9:00',
 		time_end: '10:00',
 		status: false
 	},
 	{
 		date: '15.07.2021',
-		student_name: 'Andrey',
+		student_name: 'Андрей',
 		time_start: '9:00',
 		time_end: '10:00',
 		status: true
 	},
 	{
 		date: '29.07.2021',
-		student_name: 'Andrey',
+		student_name: 'Андрей',
 		time_start: '9:00',
 		time_end: '10:00'
 	},
 	{
 		date: '29.07.2021',
-		student_name: 'Andrey',
+		student_name: 'Андрей',
 		time_start: '10:00',
 		time_end: '12:00'
 	},
 	{
 		date: '28.07.2021',
-		student_name: 'Andrey',
+		student_name: 'Андрей',
 		time_start: '11:30',
-		time_end: '12:00'
+		time_end: '13:00'
 	},
 	{
 		date: '28.07.2021',
-		student_name: 'Andrey',
+		student_name: 'Андрей',
 		time_start: '9:00',
 		time_end: '10:30'
 	},
 	{
 		date: '26.07.2021',
-		student_name: 'Andrey',
+		student_name: 'Андрей',
 		time_start: '14:30',
 		time_end: '16:30'
 	},
 	{
 		date: '26.07.2021',
-		student_name: 'Andrey',
-		time_start: '9:00',
-		time_end: '9:30'
+		student_name: 'Андрей',
+		time_start: '9:30',
+		time_end: '11:15',
 	},
 	{
 		date: '30.07.2021',
-		student_name: 'Andrey',
+		student_name: 'Андрей',
 		time_start: '9:30',
-		time_end: '10:30'
+		time_end: '10:30',
 	},
 ]
+
+export const STUDENTS = [
+	{student_name: 'Андрей'},
+	{student_name: 'Сергей'},
+	{student_name: 'Антон'},
+	{student_name: 'Паша'},
+];
